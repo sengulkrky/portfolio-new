@@ -579,6 +579,17 @@ body {
 .reveal-delay-2 { transition-delay: 0.2s; }
 
 /* ── Responsive ── */
+@media (hover: none) {
+  #cursor,
+  #cursor-ring {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 1rem 1.2rem;
@@ -599,6 +610,10 @@ body {
 
   #hero {
     padding-top: 7rem;
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 8vw, 8rem);
   }
 
   .hero-bg-text {
