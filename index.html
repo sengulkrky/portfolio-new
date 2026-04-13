@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sengül Karakaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono&family=Instrument+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+    <nav>
+        <div class="nav-logo">SK<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="hero">
+        <div class="hero-orb"></div>
+        <div class="hero-bg-text">DEV</div>
+
+        <p class="hero-label">— Available for web development</p>
+        <h1 class="hero-name">
+            <span>Sengül</span><br>
+            <span class="outlined">Karakaya</span><span class="accent">.</span>
+        </h1>
+
+        <div class="typewriter-wrap">
+            <span id="typewriter"></span><span class="cursor-blink"></span>
+        </div>
+
+        <div class="hero-cta">
+            <button type="button" class="btn-primary"
+                onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">See my work</button>
+            <button type="button" class="btn-outline"
+                onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in touch</button>
+        </div>
+
+        <div class="hero-badge">Belgium · <span>2026</span></div>
+    </section>
+
+    <section id="skills">
+        <div class="section-header reveal">
+            <span class="section-num">01</span>
+            <h2 class="section-title">What I can do</h2>
+        </div>
+        <div class="skills-grid reveal">
+            <div class="skill-cell">
+                <i class="skill-icon">◈</i>
+                <div class="skill-name">HTML &amp; CSS</div>
+                <div class="skill-sub">Flexbox · Grid · Responsive · Semantics</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill pct-85"></div>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <i class="skill-icon">⟡</i>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-sub">DOM · Events · Async</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill pct-60"></div>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <i class="skill-icon">◎</i>
+                <div class="skill-name">Python</div>
+                <div class="skill-sub">Functions · OOP · Scripting</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill pct-72"></div>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <i class="skill-icon">▣</i>
+                <div class="skill-name">Java</div>
+                <div class="skill-sub">OOP · Interfaces · Inheritance</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill pct-65"></div>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <i class="skill-icon">⬡</i>
+                <div class="skill-name">C# &amp; WPF</div>
+                <div class="skill-sub">Logic · Events · GUI apps</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill pct-55"></div>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <i class="skill-icon">◉</i>
+                <div class="skill-name">Git &amp; GitHub</div>
+                <div class="skill-sub">Version control · Collaboration</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill pct-70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-header reveal">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-num">001</div>
+                <div class="project-title">Portfolio for school</div>
+                <p class="project-desc">A school project portfolio showcasing completed web development exercices.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">PHP</span>
+                </div>
+                <a class="project-link" href="https://github.com/sengulkrky/schoolproject_portfolio"
+                    target="_blank">View on GitHub →</a>
+            </div>
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-num">002</div>
+                <div class="project-title">All Group website</div>
+                <p class="project-desc">A modern company website for All Group, showcasing their services and business
+                    information. Still expanding with new content and features.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <a class="project-link" href="https://github.com/sengulkrky/allgroup" target="_blank">View on GitHub
+                    →</a>
+            </div>
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-num">003</div>
+                <div class="project-title">HTML &amp; CSS overview</div>
+                <p class="project-desc">A reference website displaying common HTML tags and CSS properties with clear,
+                    structured cards. Work in progress with content added over time.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <a class="project-link" href="https://github.com/sengulkrky/html-css-overview" target="_blank">View on
+                    GitHub →</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-left">
+            <div class="section-header reveal">
+                <span class="section-num">03</span>
+                <h2 class="section-title">About me</h2>
+            </div>
+            <div class="about-bio reveal">
+                <p>Hi! I'm <strong>Sengül</strong>, a first-year programming student based in <strong>Belgium</strong>
+                    with a genuine passion for building things on the web.</p>
+                <p>I love experimenting with Python, Java, C#, and especially <strong>HTML &amp; CSS</strong>. I'm a
+                    self-driven learner who picks up new technologies through projects and curiosity.</p>
+                <p>Currently looking for an <strong>internship</strong> where I can grow fast, contribute meaningfully,
+                    and meet people who love building things too.</p>
+            </div>
+        </div>
+        <div class="about-stats reveal reveal-delay-1">
+            <div class="stat-box">
+                <div class="stat-num">3+</div>
+                <div class="stat-label">Projects shipped</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">5</div>
+                <div class="stat-label">Languages learned</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">1st</div>
+                <div class="stat-label">Year of study</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">∞</div>
+                <div class="stat-label">Curiosity remaining</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-header section-header--center reveal">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Let's talk</h2>
+        </div>
+        <a class="contact-email reveal" href="mailto:sengul.krky03@gmail.com">sengul.krky03@gmail.com</a>
+        <div class="contact-links reveal reveal-delay-1">
+            <a class="btn-outline" href="https://github.com/sengulkrky" target="_blank">GitHub</a>
+            <a class="btn-primary" href="mailto:sengul.krky03@gmail.com">Send email</a>
+        </div>
+    </section>
+    <footer>
+        <span>© 2026 Sengül Karakaya</span>
+        <span class="footer-accent">HTML · CSS · JS</span>
+    </footer>
+</body>
+
+    <script src="typewriter.js" defer></script>
+</html>
